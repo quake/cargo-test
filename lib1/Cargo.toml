@@ -1,0 +1,8 @@
+[package]
+name = "lib1"
+version = "0.1.0"
+authors = ["quake wang <quake.wang@gmail.com>"]
+edition = "2018"
+
+[features]
+feature1 = []

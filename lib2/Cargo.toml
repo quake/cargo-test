@@ -1,0 +1,11 @@
+[package]
+name = "lib2"
+version = "0.1.0"
+authors = ["quake wang <quake.wang@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lib1 = { path = "../lib1" }
+
+[dev-dependencies]
+lib1 = { path = "../lib1", features = ["feature1"] }
