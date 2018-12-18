@@ -2,6 +2,7 @@
 name = "foo"
 version = "0.1.0"
 dependencies = [
+ "lib1 0.1.0",
  "lib2 0.1.0",
 ]
 
