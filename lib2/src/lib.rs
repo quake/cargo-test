@@ -9,7 +9,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn eq() {
+    fn lib2_foo() {
         assert_eq!(1, foo());
     }
 }
