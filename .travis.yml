@@ -1,0 +1,19 @@
+language: rust
+sudo: true
+cache:
+  timeout: 1024
+  directories:
+    - $HOME/.cargo
+
+rust: 1.31.0
+
+script:
+- cargo test
+- cargo test --all
+- cargo build && [ "$(target/debug/foo)" = "foo 0" ]
+- cargo build --all && [ "$(target/debug/foo)" = "foo 0" ]
+- cargo build --release && [ "$(target/release/foo)" = "foo 0" ]
+- cargo build --release --all && [ "$(target/release/foo)" = "foo 0" ]
+
+before_cache:
+- rm -rf $HOME/.cargo/registry
